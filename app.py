@@ -17,12 +17,12 @@ def user_input():
 num = user_input()
 
 st.subheader('User Input Number')
-st.write(type(num))
-st.write(num)
+#st.write(type(num))
+#st.write(num)
 
 #prepocessing
 def odd_even(num):
-    if type(num) == "<class 'float'>":
+    if type(num) == float:
         return "Enter a correct integer"
     if num % 2 ==0:
         return f"{num} is even number."

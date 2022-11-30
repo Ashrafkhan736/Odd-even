@@ -11,7 +11,7 @@ This app tell whether given number is odd or not.
 st.header('User Input')
 
 def user_input():
-    num = st.number_input("Enter an integer",min_value=-sys.maxsize,max_value=sys.maxsize,step=1)
+    num = st.number_input("Enter an integer")
 
     return num
 
@@ -26,6 +26,7 @@ def odd_even(num):
     """ if type(num) == float:
         return "Enter a correct integer"
      """
+    num = int(num)
     if num % 2 ==0:
         return f"{num} is even number."
     return f"{num} is odd number."

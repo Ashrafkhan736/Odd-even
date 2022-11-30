@@ -17,6 +17,7 @@ def user_input():
 num = user_input()
 
 st.subheader('User Input Number')
+st.write(type(num))
 st.write(num)
 
 #prepocessing

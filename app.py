@@ -1,4 +1,5 @@
 import streamlit as st
+import sys
 
 st.write("""
 # Even - Odd Calculator
@@ -10,7 +11,7 @@ This app tell whether given number is odd or not.
 st.header('User Input')
 
 def user_input():
-    num = st.number_input("Enter an integer")
+    num = st.number_input("Enter an integer",min_value=sys.minint,max_value=sys.maxint,step=1)
 
     return num
 
@@ -22,8 +23,9 @@ st.subheader('User Input Number')
 
 #prepocessing
 def odd_even(num):
-    if type(num) == float:
+    """ if type(num) == float:
         return "Enter a correct integer"
+     """
     if num % 2 ==0:
         return f"{num} is even number."
     return f"{num} is odd number."

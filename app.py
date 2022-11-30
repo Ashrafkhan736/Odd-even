@@ -10,11 +10,7 @@ This app tell whether given number is odd or not.
 st.header('User Input')
 
 def user_input():
-<<<<<<< HEAD
-    num = st.number_input("Enter an integer",min=float("-inf"),step=1)
-=======
     num = st.number_input("Enter an integer",min_value=float("-inf"),step=1)
->>>>>>> d13d6a3 (added -inf as minimum value)
 
     return num
 

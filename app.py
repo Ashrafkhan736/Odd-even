@@ -11,7 +11,7 @@ This app tell whether given number is odd or not.
 st.header('User Input')
 
 def user_input():
-    num = st.number_input("Enter an integer",min_value=sys.minint,max_value=sys.maxint,step=1)
+    num = st.number_input("Enter an integer",min_value=-sys.maxsize,max_value=sys.maxsize,step=1)
 
     return num
 

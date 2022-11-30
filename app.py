@@ -22,7 +22,7 @@ st.write(num)
 
 #prepocessing
 def odd_even(num):
-    if type(num) == "float":
+    if type(num) == "<class 'float'>":
         return "Enter a correct integer"
     if num % 2 ==0:
         return f"{num} is even number."
